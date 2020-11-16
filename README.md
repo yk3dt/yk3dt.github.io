@@ -1,3 +1,3 @@
 ## https://www.yk3dt.github.io
 
-What I believe, separated into rapids.
+A little of my point of view and contributions
