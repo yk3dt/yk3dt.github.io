@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charSet="utf-8" />
+    <title class="jsx-1373700303">Newsletter Keitaro Yamanaka</title>
+    <meta name="description" content="Sign up if you are interested in games, development and languages!" class="jsx-1373700303" />
+    <meta property="og:type" content="website" class="jsx-1373700303" />
+    <meta property="og:locale" content="pt_BR" class="jsx-1373700303" />
+    <meta property="og:title" content="Newsletter Keitaro Yamanaka" class="jsx-1373700303" />
+    <meta property="og:description" content="Sign up if you are interested in games, development and languages!" class="jsx-1373700303" />
+    <meta property="og:image" content="avatar-big.png" class="jsx-1373700303" />
+    <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32" class="jsx-1373700303" />
+    <link rel="icon" type="image/png" href="favicon-192.png" sizes="192x192" class="jsx-1373700303" />
+    <link rel="icon" type="image/png" href="favicon-180.png" sizes="180x180" class="jsx-1373700303" />
+    <link rel="icon" type="image/png" href="favicon-196.png" sizes="196x196" class="jsx-1373700303" />
+    <link rel="icon" type="image/png" href="favicon-228.png" sizes="228x228" class="jsx-1373700303" />
+    <meta name="next-head-count" content="14" />
+    <style id="__jsx-1373700303">
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            background: #121212;
+        }
+
+        .container {
+            min-height: 80vh;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            color: #333333;
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+    </style>
+    <style id="__jsx-335487456">
+        a.jsx-335487456 {
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        a.jsx-335487456:hover {
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+        }
+
+        .emailSuggestionButton.jsx-335487456 {
+            cursor: pointer;
+            color: #ffffff;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            padding: 0;
+            font-size: inherit;
+        }
+
+        .emailSuggestionButton.jsx-335487456:hover {
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+        }
+
+        .email-form.jsx-335487456 {
+            font-size: 1rem;
+            min-width: 300px;
+        }
+
+        .email-label.jsx-335487456 {
+            background: #282828;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            border: 1px solid rgb(195, 195, 195);
+            border-radius: 5px;
+            margin: 0px auto;
+            -webkit-transition: border-color 100ms ease-in 0s;
+            transition: border-color 100ms ease-in 0s;
+        }
+
+        .email-label.jsx-335487456:focus-within {
+            border-color: #000;
+        }
+
+        .email-icon.jsx-335487456 {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            color: #ffffff;
+            margin: 3px 14px 0 14px;
+        }
+
+        .email-input.jsx-335487456 {
+            background: #282828;
+            outline: none;
+            border: none;
+            font-size: inherit;
+            height: 2.81rem;
+            color: #ffffff;
+            line-height: 40px;
+            padding: 0;
+            width: 80%;
+        }
+
+        .email-button.jsx-335487456 {
+            width: 100%;
+            margin: 0.7rem 0;
+            height: 2.81rem;
+            line-height: 2.8rem;
+            border-radius: 7px;
+            background-color: #535353;
+            box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.39);
+            color: white;
+            -webkit-transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+            transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            font-size: inherit;
+        }
+
+        .email-button.jsx-335487456:hover {
+            background: rgba(83, 83, 83, 0.9);
+            box-shadow: 0 6px 20px rgba(0, 118, 255, 0.23);
+        }
+
+        .show-errors.jsx-335487456 {
+            height: 45px;
+            opacity: 1;
+            -webkit-transition: height 200ms 0ms, opacity 200ms 200ms;
+            transition: height 200ms 0ms, opacity 200ms 200ms;
+        }
+
+        .hide-errors.jsx-335487456 {
+            height: 0px;
+            opacity: 0;
+            -webkit-transition: height 200ms 0ms, opacity 200ms 200ms;
+            transition: height 200ms 0ms, opacity 200ms 200ms;
+        }
+
+        .error.jsx-335487456 {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .warning.jsx-335487456 {
+            color: #f00;
+            font-weight: bold;
+            padding-right: 3px;
+        }
+
+        .avatar.jsx-335487456 {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            margin-top: 2rem;
+        }
+
+        .title.jsx-335487456 {
+            color: #ffffff;
+            margin: 2rem 1rem;
+            line-height: 1.3;
+            font-size: 2rem;
+            text-align: center;
+            max-width: 550px;
+            -webkit-letter-spacing: -0.02em;
+            -moz-letter-spacing: -0.02em;
+            -ms-letter-spacing: -0.02em;
+            letter-spacing: -0.02em;
+        }
+
+        .description.jsx-335487456 {
+            text-align: center;
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+
+        @media (max-width:600px) {
+            .avatar.jsx-335487456 {
+                width: 75px;
+                height: 75px;
+                margin-top: 0.5rem;
+            }
+            .title.jsx-335487456 {
+                font-size: 1.5rem;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="__next">
+        <div class="jsx-1373700303 container"><img src="avatar-big.png" title="k3dt Avatar" alt="k3dt Avatar" class="jsx-335487456 avatar" />
+            <h1 class="jsx-335487456 title">Subscribe if you are interested in games, development and languages!</h1>
+            <form action="https://app.convertkit.com/forms/1821045/subscriptions" method="post" data-sv-form="1821045" data-uid="a9b57f90be" data-version="5" novalidate="" class="jsx-335487456 email-form"><label class="jsx-335487456 email-label"><span class="jsx-335487456"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" class="jsx-335487456 email-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" class="jsx-335487456"></path><path d="M22 6l-10 7L2 6" class="jsx-335487456"></path></svg></span><input type="email" name="email_address" placeholder="Your primary email" autoCorrect="off" autoCapitalize="off" spellcheck="false" value="" class="jsx-335487456 email-input"/></label>
+                <div
+                    class="jsx-335487456 hide-errors"></div><button data-element="submit" class="jsx-335487456 email-button"><span class="jsx-335487456">Subscribe</span></button></form>
+    </div>
+    </div>
+</body>
+
+</html>
